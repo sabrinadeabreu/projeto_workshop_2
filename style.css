@@ -1,0 +1,64 @@
+*{
+    margin: 0px 0px;
+}
+
+#pagina{
+
+    display: grid;
+    grid-template-areas: "header"
+                          "container";
+}
+
+
+#header{
+    grid-area: header;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around
+    
+}
+
+
+
+.bordaverde{
+    border: 1px solid green;
+}
+
+#container{
+
+    display: grid;
+    grid-template-areas: "objetivo"
+                         "conjuntoCards ";
+
+    grid-template-rows: 100px 300px;
+    grid-template-columns: 100%;
+
+
+}
+
+#objetivos{
+    grid-area: objetivo;
+    justify-self: center;
+    align-self: center;
+}
+
+#conjuntoCards{
+    grid-area: conjuntoCards;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card{
+    border: 1px solid #CCCCCC;
+    border-radius: 24px;
+    width: 300px;
+    height: 280px;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
